@@ -1,15 +1,22 @@
 # web
 
-Minimal static web server with no configuration.  Just run to serve current directory or specify one as only command line argument.
+Minimal static web server with minimal configuration.  Just run to serve current directory or specify one as only command line argument.
 
 ## Build
 
     go install 
-    
+
 ## Run
 
-    web
-    
-or
+    web [-p PORT] [direction]
 
-    web some/directory/i/want/to/serve
+Examples:
+
+Serve current directory on ':8080'
+
+    web
+
+Serve /doc/root on 7777
+
+    web -p 7777 /doc/root
+
