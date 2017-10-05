@@ -8,7 +8,7 @@ Minimal static web server with minimal configuration.  Just run to serve current
 
 ## Run
 
-    web [-p PORT] [direction]
+    web [-p PORT] [directory]
 
 Examples:
 
@@ -19,4 +19,3 @@ Serve current directory on ':8080'
 Serve /doc/root on 7777
 
     web -p 7777 /doc/root
-
